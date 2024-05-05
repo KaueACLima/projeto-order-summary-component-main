@@ -1,0 +1,145 @@
+body {
+  min-height: 100vh;
+
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 16px;
+
+  background: var(--paleblue) url(../images/pattern-background-desktop.svg)
+    no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.card {
+  width: 350px;
+
+  background: var(--very-pale-blue);
+
+  margin: 4rem 0;
+
+  border-radius: 1rem;
+
+  overflow: hidden;
+}
+
+.card .card_image img {
+  width: 100%;
+}
+
+.card_description,
+.card_price,
+.card_action {
+  margin-bottom: 1.5rem;
+}
+
+.card .card_description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 0 1.5rem;
+}
+
+.card .card_description h1 {
+  font-weight: 900;
+  color: var(--dark-blue);
+
+  margin: 1rem 0 0.7rem 0;
+}
+
+.card .card_description p,
+.card_price .section-price .price {
+  font-size: 0.7rem;
+  text-align: center;
+  color: var(--desaturated-blue);
+}
+
+.card .card_price {
+  background: var(--pale-blue-two);
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  border-radius: 0.6rem;
+
+  padding: 0.8rem;
+}
+
+.card_price img {
+  width: 35px;
+}
+
+.card_price .section-price {
+  font-size: 0.8rem;
+}
+
+.card_price .section-price span {
+  display: block;
+
+  font-size: 0.7rem;
+  font-weight: 900;
+  color: var(--dark-blue);
+
+  margin-bottom: 0.2rem;
+}
+
+.card_price .change {
+  font-size: 0.6rem;
+  font-weight: 900;
+  color: var(--bright-blue);
+}
+
+.card .card_action {
+  display: flex;
+  flex-direction: column;
+}
+
+.card_action .btn {
+  background: var(--bright-blue);
+
+  box-shadow: 0 10px 25px 0px rgba(0, 0, 0, 0.295);
+
+  border: none;
+  border-radius: 0.6rem;
+
+  font-weight: bolder;
+  color: var(--very-pale-blue);
+
+  margin-bottom: 1rem;
+  padding: 0.8rem;
+
+  transition: 0.3s;
+}
+
+.card_action .btn:hover {
+  background: var(--desaturated-blue);
+
+  cursor: pointer;
+}
+
+.card_action .btn-cancel {
+  font-size: 0.7rem;
+  font-weight: bolder;
+  color: var(--bright-blue);
+
+  text-decoration: none;
+  text-align: center;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
